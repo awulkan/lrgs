@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Inherits from whatever html is set to */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.grid {
+  width: 100%;
+  
+  margin: 0 auto;
+}
+
+/* Clearing context to avoid parent element height collapse */
+.grid:before,
+.grid:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+/* Clear fix to avoid grid and row overlap */
+.grid:after,
+.row:after {
+  clear: both;
+}
+
+/* All classes that start with 'col-' will have these properies */
+[class*='col-'] {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+}
+
+/* Optional styling of columns */
+.col {
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  color: #672bb6;
+  font-weight: 600;
+  text-align: center;
+}
+
+.col-1 {width: 8.33333%;}
+.col-2 {width: 16.66667%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33333%;}
+.col-5 {width: 41.6667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33333%;}
+.col-8 {width: 66.6667%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33333%;}
+.col-11 {width: 91.66667%;}
+.col-12 {width: 100%;}
