@@ -1,0 +1,11 @@
+/*
+An optional stylesheet that just resets some basic
+browser defaults. It aligns everything a bit better.
+
+This is a work in progress.
+*/
+
+body, p {
+  padding: 0;
+  margin: 0;
+}

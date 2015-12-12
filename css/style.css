@@ -1,4 +1,28 @@
+/* 
+This stylesheet is optional. It is only created to
+get some default styles set up so that the grid can
+be easily modified to your liking.
+*/
+
 body {
   background: #eee;
   font-family: Arial;
+}
+
+/* Default styling of columns */
+.def-style {
+  padding: 1rem;
+  margin: 0.3rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  color: #666;
+}
+
+/* IN PROGRESS */
+/* Modern styling of columns */
+.modern {
+  padding: 1rem;
+  background-color: #fff;
+  color: #666;
 }

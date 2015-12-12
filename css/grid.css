@@ -1,17 +1,10 @@
-html {
-  box-sizing: border-box;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
-/* Inherits from whatever html is set to */
+/* Helpful for handling the column gutter */
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .grid {
@@ -35,36 +28,56 @@ body {
   clear: both;
 }
 
-/* All classes that start with 'col-' will have these properies */
-[class*='col-'] {
+/* Default column size, mobile-first apporach */
+.col {
   width: 100%;
   float: left;
   min-height: 1px;
 }
 
-/* Optional styling of columns */
-.col {
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #fff;
-  border-radius: 0.3rem;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-  color: #672bb6;
-  font-weight: 600;
-  text-align: center;
+/* Column sizes for the 12 column grid layout */
+/* (100/12) * column number = percentage */
+@media screen and (min-width: 440px) {
+  .s1 {width: 8.33333%;}
+  .s2 {width: 16.66667%;}
+  .s3 {width: 25%;}
+  .s4 {width: 33.33333%;}
+  .s5 {width: 41.6667%;}
+  .s6 {width: 50%;}
+  .s7 {width: 58.33333%;}
+  .s8 {width: 66.6667%;}
+  .s9 {width: 75%;}
+  .s10 {width: 83.33333%;}
+  .s11 {width: 91.66667%;}
+  .s12 {width: 100%;}
 }
 
-/* Colums sizes for the 12 column grid layout */
-/* (100/12) * column number = percentage */
-.col-1 {width: 8.33333%;}
-.col-2 {width: 16.66667%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33333%;}
-.col-5 {width: 41.6667%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33333%;}
-.col-8 {width: 66.6667%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33333%;}
-.col-11 {width: 91.66667%;}
-.col-12 {width: 100%;}
+@media screen and (min-width: 800px) {
+  .m1 {width: 8.33333%;}
+  .m2 {width: 16.66667%;}
+  .m3 {width: 25%;}
+  .m4 {width: 33.33333%;}
+  .m5 {width: 41.6667%;}
+  .m6 {width: 50%;}
+  .m7 {width: 58.33333%;}
+  .m8 {width: 66.6667%;}
+  .m9 {width: 75%;}
+  .m10 {width: 83.33333%;}
+  .m11 {width: 91.66667%;}
+  .m12 {width: 100%;}
+}
+
+@media screen and (min-width: 1000px) {
+  .l1 {width: 8.33333%;}
+  .l2 {width: 16.66667%;}
+  .l3 {width: 25%;}
+  .l4 {width: 33.33333%;}
+  .l5 {width: 41.6667%;}
+  .l6 {width: 50%;}
+  .l7 {width: 58.33333%;}
+  .l8 {width: 66.6667%;}
+  .l9 {width: 75%;}
+  .l10 {width: 83.33333%;}
+  .l11 {width: 91.66667%;}
+  .l12 {width: 100%;}
+}

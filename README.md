@@ -4,10 +4,7 @@ A normal css grid system for basic projects. The reason I'm creating this is bec
 
 ![Alt text](/images/grid-image.png)
 
-##TODO:
-1. Get a basic grid layout working.  
-  1.1. Twelve column.  
-  2.2. Support column offset.  
-  2.3. ???  
-  2.4. Profit.  
-2. Make it responsive.
+##TODO: 
+1. Support column offset.
+2. Add optional styles.
+3. Add pre-made website layouts.
