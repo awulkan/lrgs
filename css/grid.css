@@ -16,7 +16,7 @@ body {
 
 .grid {
   width: 100%;
-  
+  /* You can set a max-width to limit the grid here */
   margin: 0 auto;
 }
 
@@ -54,6 +54,8 @@ body {
   text-align: center;
 }
 
+/* Colums sizes for the 12 column grid layout */
+/* (100/12) * column number = percentage */
 .col-1 {width: 8.33333%;}
 .col-2 {width: 16.66667%;}
 .col-3 {width: 25%;}
